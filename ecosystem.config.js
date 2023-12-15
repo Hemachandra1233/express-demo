@@ -11,7 +11,7 @@ module.exports = {
        "ref"  : "origin/master",
        "repo" : "git@github.com:Hemachandra1233/express-demo.git",
        "path" : "/home/ubuntu/pm2-demo",
-       "post-deploy" : "pm2 start ecosystem.config.js --env production"
+       "post-deploy" : "yarn install && yarn build && pm2 start ecosystem.config.js --env production"
     }
   }
 };
