@@ -1,0 +1,10 @@
+{
+  "name": "express-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Hemachandra1233/pm2-demo.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
