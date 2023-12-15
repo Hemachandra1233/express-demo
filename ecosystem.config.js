@@ -13,7 +13,7 @@ module.exports = {
        "ref"  : "origin/master",
        "repo" : "git@github.com:Hemachandra1233/express-demo.git",
        "path" : "/home/ubuntu/pm2-demo",
-       "post-deploy" : "npm pack"
+       "post-deploy" : "npm start"
     }
   }
 };
