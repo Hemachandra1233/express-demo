@@ -1,7 +1,6 @@
 module.exports = {
   apps : [{
-    script: 'index.js',
-    instances: 1
+    script: 'index.js'
   }]
    
   // aDeployment Configuration
