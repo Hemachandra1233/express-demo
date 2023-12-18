@@ -1,1 +1,27 @@
-example
+name: Node.js CI/CD with Azure VM
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Node.js and Yarn
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+        registry-url: https://registry.yarnpkg.com
+
+    - name: Install Dependencies
+      run: yarn install
+
+    - name: Build Application
+      run: yarn build
+
+    - name: check yarn version
+      run: yarn --version
